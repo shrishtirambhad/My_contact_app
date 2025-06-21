@@ -38,24 +38,22 @@
     </style>
 </head>
 <body>
-    <!-- Bootstrap 5 Navbar -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+   <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm">
   <div class="container-fluid">
-    <a class="navbar-brand" href="addcontact.html">My Contact App</a>
+    <a class="navbar-brand" href="index.html">My Contact</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
       <span class="navbar-toggler-icon"></span>
     </button>
-
     <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav ms-auto">
-        <li class="nav-item">
-          <a class="nav-link" href="index.html">Register</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="login.html">Login</a>
-        </li>
-        
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item"><a class="nav-link" href="add-contact.html">Add Contact</a></li>
+        <li class="nav-item"><a class="nav-link" href="view-contact.html">View Contact</a></li>
+        <li class="nav-item"><a class="nav-link" href="edit-contact.html">Edit Contact</a></li>
       </ul>
+      <div class="d-flex">
+        <a href="index.html" class="btn btn-outline-success me-2">Login</a>
+        <a href="signup.html" class="btn btn-outline-success">Signup</a>
+      </div>
     </div>
   </div>
 </nav>
