@@ -1,96 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>view Contact</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <style>
-        body {
-            background-color: #f8f9fa;
-        }
-        .navbar {
-            background-color: #343a40;
-        }
-        .navbar a, .navbar-brand {
-            color: white !important;
-        }
-        .navbar .btn-outline-success {
-            color: #198754;
-            border-color: #198754;
-        }
-        .edit-box {
-            margin-top: 50px;
-            background-color: white;
-            padding: 40px;
-            border-radius: 8px;
-            box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
-        }
-        footer {
-            background-color: #343a40;
-            color: white;
-            padding: 10px;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-            text-align: center;
-        }
-    </style>
+    <link rel="stylesheet"href="style2.css">
+  <meta charset="UTF-8">
+  <title>View Contacts</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
-    <!-- Bootstrap 5 Navbar -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="viewcontact.html">My Contact App</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-      <span class="navbar-toggler-icon"></span>
-    </button>
 
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav ms-auto">
-        <li class="nav-item">
-          <a class="nav-link" href="index.html">Register</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="login.html">Login</a>
-        </li>
-       
-      </ul>
+  <!-- Navigation (same as other pages) -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">My Contact</a>
+      <div class="collapse navbar-collapse">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item"><a class="nav-link" href="addcontact.html">Add Contact</a></li>
+          <li class="nav-item"><a class="nav-link active" href="viewcontact.html">View Contact</a></li>
+          <li class="nav-item"><a class="nav-link" href="editcontact.html">Edit Contact</a></li>
+        </ul>
+      </div>
     </div>
+  </nav>
+
+  <!-- Contact List -->
+  <div class="container mt-5">
+    <h2>Saved Contacts</h2>
+    <table class="table table-striped table-bordered">
+      <thead class="table-dark">
+        <tr>
+          <th>Name</th>
+          <th>Email</th>
+          <th>Phone</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Aryan Sharma</td>
+          <td>aryan@example.com</td>
+          <td>9876543210</td>
+        </tr>
+        <tr>
+          <td>Meera Kapoor</td>
+          <td>meera@example.com</td>
+          <td>9876501234</td>
+        </tr>
+        <!-- Add more contacts here -->
+      </tbody>
+    </table>
   </div>
-</nav>
-
-    
-
-    <!-- View Contact Form -->
-    <div class="container d-flex justify-content-center">
-        <div class="edit-box col-md-6">
-            <h3 class="text-center mb-4">View Conatct</h3>
-            <form>
-                <div class="mb-3">
-                    <label for="name" class="form-label">Enter Name</label>
-                    <input type="text" class="form-control" id="name" placeholder="Enter Name">
-                </div>
-                <div class="mb-3">
-                    <label for="number" class="form-label">Enter Number</label>
-                    <input type="text" class="form-control" id="number" placeholder="Enter Number">
-                </div>
-                <div class="mb-3">
-                    <label for="email" class="form-label">Enter Email</label>
-                    <input type="email" class="form-control" id="email" placeholder="Enter Email">
-                </div>
-                <div class="mb-3">
-                    <label for="address" class="form-label">Enter Address</label>
-                    <input type="text" class="form-control" id="address" placeholder="Enter Address">
-                </div>
-                <button type="submit" class="btn btn-primary">Submit</button>
-            </form>
-        </div>
-    </div>
-
-    <!-- Footer -->
-    <footer>
-        © 2025 Developed By Shrishti.
-    </footer>
 
 </body>
 </html>
